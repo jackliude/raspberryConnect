@@ -101,7 +101,7 @@ void loop() {
     else if (ch == ',') {
       fieldIndex++;
     }
-    else {
+    else if(c=='t'){
       for (int i = 0; i < min(NUMBER_OF_FIELDS, fieldIndex + 1); i++) {
         recive[count] = values[i];
         count++;
